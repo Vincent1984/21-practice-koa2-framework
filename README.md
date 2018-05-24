@@ -6,7 +6,7 @@ It includes nearly every feature:
 *** please check package.json for all the techniques I used.
 
 * authenticate: JWT in header, with passport supported
-* session:      no session
+* session:      basd on requirements. 1-with session, 2-no session.
 * cors: cors
 * error handler: throw error at any time and handle it together
 * error logger: log any error stacks
