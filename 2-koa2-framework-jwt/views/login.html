@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>koa framework</title>
+</head>
+<body>
+  <form >
+    <p>
+      <label>Username:
+        <input type="text" name="username" id="username" value="test" />
+      </label>
+    </p>
+    <p>
+      <label>Password:
+        <input type="password" name="password" id="password"  value="test" />
+      </label>
+    </p>
+    <p>
+      <p> below part only available when you change the backend code in server.js to JWT passport </p>
+      <button id="jwtlogin" type="button"> Log In for JWT token </button>
+      <button id="cleartoken" type="button"> clear jwt token in local storage </button>
+    </p>
+  </form>
+</body>
+  <script src="/login.js"></script>
+</html>
