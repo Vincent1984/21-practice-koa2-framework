@@ -25,4 +25,6 @@ npm start
 http://localhost:3000
 
 ## Notice
-Please refer to the previous project for API calls
+The sequence in the program is very important for koa framework
+
+
