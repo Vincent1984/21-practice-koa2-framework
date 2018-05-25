@@ -24,22 +24,3 @@ exports.fetchUserById = ((id) => {
 	  }
 })();
 
-
-
-
-exports.fetchUserList = (() => {
-	  return async function() {
-		  const users = [{
-			  id: '2',
-			  username: 'brotherhui@163.com',
-			  password: '123456',
-			  age: 38
-			}, {
-			  id: '3',
-			  username: '17229775@qq.com',
-			  password: '123456',
-			  age: 38
-			}];
-	    return users;
-	  }
-})();

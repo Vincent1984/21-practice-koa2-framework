@@ -22,11 +22,11 @@ exports.getUserById = async (ctx, next) => {
 
 //GET /users
 exports.getUserList = async (ctx, next) => {
-  let users = await userService.fetchUserList();
-  if(!users){
-	  ctx.throw(404, 'No User Data found'); 
-  }
-  ctx.body = { success: true, data: users };
+    console.log("user name "+ctx.state.user.username)
+    console.log("password "+ctx.state.user.password)
+  // ctx.body = { success: true, data: users };
+    ctx.body = { success: true, data: ctx.state.user };
 }
+
 
 

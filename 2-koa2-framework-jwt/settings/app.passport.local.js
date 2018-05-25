@@ -15,8 +15,10 @@ exports.init = () => {
 	    .then(user => {
             console.log("1111 get LocalStrategy ");
 	      if (username === user.username && password === user.password) {
+              console.log("1111 get LocalStrategy done ");
 	        done(null, user)
 	      } else {
+              console.log("1111 get LocalStrategy wrong ");
 	        done(null, false)
 	      }
 	    })

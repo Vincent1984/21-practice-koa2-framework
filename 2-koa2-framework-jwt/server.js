@@ -17,8 +17,6 @@ const cluster = require('./middlewares/cluster');
 
 const passportLocal = require('./settings/app.passport.local');
 const passportJwt = require('./settings/app.passport.jwt');
-const passportSerialize = require('./settings/app.passport.serialize');
-const checkpointJwt = require('./settings/app.auth.checkpoint.jwt');
 
 const statelessRouter = require('./settings/app.routers.stateless');
 const statefulRouter = require('./settings/app.routers.stateful');
@@ -39,12 +37,10 @@ bodyParser.init(app);
 passport.init(app);
 passportLocal.init();
 passportJwt.init();
-passportSerialize.init();
 
 
 //router
 statelessRouter.init(app);
-checkpointJwt.init(app);
 statefulRouter.init(app);
 
 docs.init(app);

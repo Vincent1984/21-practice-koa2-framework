@@ -15,7 +15,7 @@ exports.init = app => {
 
 	postrouters.get('/logout', auth.logout);
 
-	postrouters.get('/users', user.getUserList);
+	postrouters.get('/users', passport.authenticate('jwt', { session: false }),user.getUserList);
 	postrouters.get('/user/:id', validate(user.v.getUserById), user.getUserById);
 	app.use(postrouters.routes());
 

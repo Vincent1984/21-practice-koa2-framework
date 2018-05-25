@@ -14,5 +14,8 @@ document.getElementById('jwtusers').addEventListener('click', () => {
         }
     })
     .then(res => res.json())
+    .then(data => {
+        alert("current user is "+JSON.stringify(data));
+    })
     .catch(err => console.log(err))
 })
