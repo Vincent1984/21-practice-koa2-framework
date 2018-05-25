@@ -26,3 +26,21 @@ http://localhost:3000
 
 ## Notice
 Please refer to the previous project for API calls
+
+
+## Sequence for login
+1. Frontend Click Login
+2. Router
+3. go to local passport strategy to check username and password
+4. go to passport serialze the information into session
+5. sign the jwt token and provide it out
+
+
+## Sequence for Check Access
+1. Frontend click something after logon.
+2. Go to checkpoint
+3. go to jwt passport strategy to check jwt
+4. Go to passport deserialze to get the user id from session and get user whole information into user object
+5. if success, checkpoint pass
+6. go to router
+6. do the real thing
